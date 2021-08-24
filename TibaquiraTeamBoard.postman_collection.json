@@ -1,0 +1,861 @@
+{
+	"info": {
+		"_postman_id": "aec8755c-c665-40ba-9256-d3798d34b71f",
+		"name": "TibaquiraTeamBoard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ROLE",
+			"item": [
+				{
+					"name": "Register role user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user\",\r\n    \"description\": \"User of the app\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/role/register-Role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"role",
+								"register-Role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register role Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"admin\",\r\n    \"description\": \"admin of the app\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/role/register-Role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"role",
+								"register-Role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/role/list-Role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"role",
+								"list-Role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"612412e44277923614084738\",\r\n    \"description\": \"user frequently\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/role/update-Role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"role",
+								"update-Role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "Register User 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sebastian Tibaquira\",\r\n    \"email\": \"johnsebas94@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/register-User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"register-User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nicolas\",\r\n    \"email\": \"Nico11@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/register-User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"register-User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Orjuela\",\r\n    \"email\": \"Gabo98@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/register-User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"register-User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"David Orjuela\",\r\n    \"email\": \"davidf@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/register-User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"register-User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"johnsebas94@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc2Njc4Nn0.bDtiuMgiQAX5i13yNupkW2b21g6fYeKnylXhu8zJWKA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/user/list-Users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"list-Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc2Njc4Nn0.bDtiuMgiQAX5i13yNupkW2b21g6fYeKnylXhu8zJWKA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6124428b82d4665da0ebfff1\",\r\n    \"name\": \"Nicolas Pintor\",\r\n    \"email\": \"Nico11@gmail.com\",\r\n    \"password\": \"5678\",\r\n    \"roleId\": \"61241312427792361408473b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/update-User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"update-User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDI4YjgyZDQ2NjVkYTBlYmZmZjEiLCJuYW1lIjoiTmljb2xhcyBQaW50b3IiLCJyb2xlSWQiOiI2MTI0MTMxMjQyNzc5MjM2MTQwODQ3M2IiLCJpYXQiOjE2Mjk3Njc2NzB9.O4LdVaE_Pb7JECCTXuptNMwDQIv65bZmH0nX_hpsTIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"_id\": \"612442d382d4665da0ebfff5\",\r\n \"dbStatus\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/delete-User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"delete-User"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ADMIN",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"johnsebas94@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MjYxM30.HfO7vmnkScYakjtD5wTapE8EjT_gP7HeccKd7drjYD8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cristina\",\r\n    \"email\": \"cris71@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"roleId\": \"61241312427792361408473b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/register-Admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"register-Admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BOARD",
+			"item": [
+				{
+					"name": "Login User 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"johnsebas94@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Task 1 - User 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MjYxM30.HfO7vmnkScYakjtD5wTapE8EjT_gP7HeccKd7drjYD8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Crear diseño Web\",\r\n    \"description\": \"Usar HTML y CSS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/board/save-Task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"save-Task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save task 2 - User 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MzI0MH0.z7m9gddfGjv0AriGcPb2uLHY1DztSfKGbYG1jEJOddI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Crear Botstrap\",\r\n    \"description\": \"Usar links de style y scripts\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/board/save-Task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"save-Task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Nico11@gmail.com\",\r\n    \"password\": \"5678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save task 1 - User 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDI4YjgyZDQ2NjVkYTBlYmZmZjEiLCJuYW1lIjoiTmljb2xhcyBQaW50b3IiLCJyb2xlSWQiOiI2MTI0MTMxMjQyNzc5MjM2MTQwODQ3M2IiLCJpYXQiOjE2Mjk3NzMzNTd9.44HDdFVycwaobSNymgZaV6XIrBjCIvcIGbEP5KoV7qo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Design Backend\",\r\n    \"description\": \"Programming backen in JS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/board/save-Task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"save-Task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MzI0MH0.z7m9gddfGjv0AriGcPb2uLHY1DztSfKGbYG1jEJOddI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/board/list-Task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"list-Task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task / Task 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MzI0MH0.z7m9gddfGjv0AriGcPb2uLHY1DztSfKGbYG1jEJOddI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"_id\": \"61245d1c847ee45e14bb3593\",\r\n   \"taskStatus\": \"done\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/board/update-Task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"update-Task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MzI0MH0.z7m9gddfGjv0AriGcPb2uLHY1DztSfKGbYG1jEJOddI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/board/delete-Task/61245e15847ee45e14bb3597",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"delete-Task",
+								"61245e15847ee45e14bb3597"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "IMG",
+			"item": [
+				{
+					"name": "Save TaskImg with file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MzI0MH0.z7m9gddfGjv0AriGcPb2uLHY1DztSfKGbYG1jEJOddI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Imagen 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Bakend Image",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admjtibaquirap/Downloads/back-end.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/board/save-TaskImg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"save-TaskImg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save TaskImg without file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTI0NDE5ZDgyZDQ2NjVkYTBlYmZmZWMiLCJuYW1lIjoiU2ViYXN0aWFuIFRpYmFxdWlyYSIsInJvbGVJZCI6IjYxMjQxMzEyNDI3NzkyMzYxNDA4NDczYiIsImlhdCI6MTYyOTc3MzI0MH0.z7m9gddfGjv0AriGcPb2uLHY1DztSfKGbYG1jEJOddI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "\"Prueba sin imagen\"",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "\"Tarea sin imagen\"",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/board/save-TaskImg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"board",
+								"save-TaskImg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
