@@ -6,7 +6,7 @@ const ValidateUser = require("../middleware/validateUser");
 const Admin = require("../middleware/admin");
 
 //http://localhost:3002/api/user/register-User
-router.post("/register-User", UserController.registerUser);
+router.post("/registerUser", UserController.registerUser);
 //http://localhost:3002/api/user/login
 router.post("/login", UserController.login);
 //http://localhost:3002/api/user/list-Users 
@@ -18,12 +18,12 @@ router.get(
   UserController.listUser
 );
 //http://localhost:3002/api/user/update-User
-router.put("/update-User", Auth, ValidateUser, Admin, UserController.updateUser);
+router.put("/updateUser", Auth, ValidateUser, Admin, UserController.updateUser);
 //http://localhost:3002/api/user/delete-User
-router.put("/delete-User", Auth, ValidateUser, Admin, UserController.deleteUser);
+router.put("/deleteUser", Auth, ValidateUser, Admin, UserController.deleteUser);
 //http://localhost:3002/api/user/register-Admin
 router.post(
-  "/register-Admin",
+  "/registerAdmin",
   Auth,
   ValidateUser,
   Admin,

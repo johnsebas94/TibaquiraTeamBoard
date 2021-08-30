@@ -8,21 +8,21 @@ const multiparty = require("connect-multiparty");
 const mult = multiparty();
 
 //http://localhost:3002/api/board/save-Task
-router.post("/save-Task", Auth, ValidateUser, BoardController.saveTask);
+router.post("/saveTask", Auth, ValidateUser, BoardController.saveTask);
 //http://localhost:3002/api/board/list-Task
-router.get("/list-Task", Auth, ValidateUser, BoardController.listTask);
+router.get("/listTask", Auth, ValidateUser, BoardController.listTask);
 //http://localhost:3002/api/board/update-Task
-router.put("/update-Task", Auth, ValidateUser, BoardController.updateTask);
+router.put("/updateTask", Auth, ValidateUser, BoardController.updateTask);
 //http://localhost:3002/api/board/delete-Task
 router.delete(
-  "/delete-Task/:_id",
+  "/deleteTask/:_id",
   Auth,
   ValidateUser,
   BoardController.deleteTask
 );
 //http://localhost:3002/api/board/save-TaskImg
 router.post(
-  "/save-TaskImg",
+  "/saveTaskImg",
   mult,
   Upload,
   Auth,
@@ -31,3 +31,4 @@ router.post(
 );
 
 module.exports = router;
+

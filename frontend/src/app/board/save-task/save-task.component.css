@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px 0px;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+.colorButton {
+  background-color: #3d3838;
+  color: white;
+}
+
+.coloField {
+  color: #3d3838;
+}
+
+.bgcomponent {
+  background-image: url("../../../assets/img/fn1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+}
+
+.mat-form-field {
+  margin-right: 8px;
+}
