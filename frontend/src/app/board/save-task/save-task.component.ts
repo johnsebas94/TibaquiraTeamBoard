@@ -6,6 +6,7 @@ import {
   MatSnackBarHorizontalPosition,
   MatSnackBarVerticalPosition,
 } from '@angular/material/snack-bar';
+import { AstMemoryEfficientTransformer } from '@angular/compiler';
 
 @Component({
   selector: 'app-save-task',
@@ -18,14 +19,16 @@ export class SaveTaskComponent implements OnInit {
   horizontalPosition: MatSnackBarHorizontalPosition = 'end';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
   durationInSeconds: number = 2;
+  selectedFile: any;
 
   constructor(
     private _boardService: BoardService,
     private _router: Router,
     private _snackBar: MatSnackBar
   ) {
-    this.registerData = {}; 
+    this.registerData = {};
     this.message = '';
+    this.selectedFile = null;
   }
 
   ngOnInit(): void {}
@@ -33,14 +36,13 @@ export class SaveTaskComponent implements OnInit {
     if (!this.registerData.name || !this.registerData.description) {
       console.log('Failed process: Incomplete Data');
       this.message = 'Failed process: Incomplete Data';
-      this.openSnackBarError(); 
+      this.openSnackBarError();
       this.registerData = {};
     } else {
       this._boardService.saveTask(this.registerData).subscribe(
-        
         (res) => {
           console.log(res);
-          this._router.navigate(['/listTask']); 
+          this._router.navigate(['/listTask']);
           this.message = 'Task create';
           this.openSnackBarSuccesfull();
           this.registerData = {};
@@ -49,12 +51,45 @@ export class SaveTaskComponent implements OnInit {
         (err) => {
           console.log(err);
           this.message = err.error;
+          this.openSnackBarError();
         }
       );
     }
   }
 
-  deleteTask() {}
+  uploadImg(event: any) {
+    this.selectedFile = <File>event.target.files[0];
+  }
+
+  saveTaskImg() {
+    if (!this.registerData.name || !this.registerData.description) {
+      console.log('Failed process: Incomplete Data');
+      this.message = 'Failed process: Incomplete Data';
+      this.openSnackBarError();
+      this.registerData = {};
+    } else {
+      const data = new FormData();
+      data.append('image', this.selectedFile, this.selectedFile.name);
+      data.append('name', this.registerData.name);
+      data.append('description', this.registerData.description);
+
+      this._boardService.saveTaskImg(data).subscribe(
+        (res) => {
+          console.log(res);
+          this._router.navigate(['/listTask']);
+          this.message = 'Task create';
+          this.openSnackBarSuccesfull();
+          this.registerData = {};
+        },
+        (err) => {
+          console.log(err);
+          this.message = err.error;
+          this.openSnackBarError();
+        }
+      );
+    }
+  }
+
   openSnackBarSuccesfull() {
     this._snackBar.open(this.message, 'X', {
       horizontalPosition: this.horizontalPosition,

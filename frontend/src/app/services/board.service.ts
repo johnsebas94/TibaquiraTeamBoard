@@ -29,4 +29,7 @@ export class BoardService {
     //Se concatena el board y no un jason para eliminar la tarea por el id
     return this._http.delete<any>(this.env + 'board/deleteTask/' + board._id);
   }
+  saveTaskImg(board: any){
+    return this._http.post<any>(this.env + 'board/saveTaskImg', board)
+  }
 }
